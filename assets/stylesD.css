@@ -1,0 +1,116 @@
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+
+ 
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    /* background-image: linear-gradient(-60deg, #ff6600 50%, #9933cc 50%); */
+    /* background-image: linear-gradient(-60deg, #93c 50%, #f60 50%); */
+    background-image: linear-gradient(-60deg, rgb(59, 55, 61) 50%, rgb(14, 6, 1) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:60%;
+    transform:translate(-50%, -50%);
+  }
+  /* .setup{
+    margin-right: 50px;
+    margin-left: 50px;
+  } */
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+  h2,h3,h4{
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+    color: #ffffff;
+  }
+  
+  .top{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+  } 
+  .top2{
+    /* padding-top: 20px; */
+    /* padding-bottom: 30px; */
+    text-align: center;
+  } 
+  .styled-table {
+    border-collapse: collapse;
+    background-color:rgba(0,0,0,.2);
+    margin: 25px 0;
+    font-size: 0.9em;
+    /* font-family: sans-serif; */
+    
+    border-radius: .25em;
+    min-width: 400px;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    padding:10vmin;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin-right: 60px;
+    margin-left: 60px;
+    
+}
+.styled-table thead tr {
+  background-color: #9A48D0;
+  /* background-color: #009879; */
+  /* background-color: #978900; */
+  color: #ffffff;
+  /* color: #0E0601; */
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 22px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* .styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+} */
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+/* .styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+} */

@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/66475ad3-dd9c-4b16-907b-033b933a61cb/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/readrants0"
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/stylesD.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <!-- <h1 style="text-align: center;"></h1> -->
+    <h2 class="top" style="padding-bottom: 40px; padding-top: 30px;">Read rumors, complaints, stories written anonymously.</h2>
+    <h3 class="top">Maybe someone gave out a secret about you.</h3>
+    <div style="padding-bottom: 10px;">
+    <h4 class="top2">The creator of this website was bored, </h4>
+    <h4 class="top2">So one fine morning,he woke up and decided the world needs more conflicts.</h4>
+    </div>
+    <table class="styled-table" >
+        <thead>
+          <tr >
+            
+            <th style="width: 200px;" scope="col">Written by</th>
+            <th style="width: 200px;" scope="col">Context</th>
+            <th style="text-align: center;" scope="col">Their story (definitely not fictional)</th>
+   
+          </tr>
+        </thead>
+        <tbody>
+        <%contentList.reverse().forEach(data => {%>
+            <tr>
+                <td scope="row"><%= data.name %></td>
+                <td><%= data.content %></td>
+                <td><%= data.feedback %></td>
+   
+            </tr>
+        <%})%>
+        </tbody>
+      </table>
+</body>
+</html>

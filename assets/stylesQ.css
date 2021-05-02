@@ -1,0 +1,122 @@
+label,legend,input{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.top{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html{
+    height: 100%;
+}
+body {
+    margin:0;
+  }
+
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:60%;
+    transform:translate(-50%, -50%);
+  }
+  
+
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+  /* .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 2px;
+    cursor: pointer;
+  } */
+
+  body:before{
+    content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .button{
+    background:transparent;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    /* font-size:1.3em; */
+    padding:0 1em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    /* margin-top: 20px; */
+    font-family: 'Roboto Mono', monospace;
+    
+  }
+  .button:hover{
+    background:#fff;
+    color:#ab1a9d;
+  }
+  .button:before, .button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    /* background: #1AAB8A; */
+    background: #ab1a9d;
+    transition:400ms ease all;
+  }
+  .button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
