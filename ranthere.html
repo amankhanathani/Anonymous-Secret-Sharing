@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/stylesQ.css">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+
 </head>
 
 <body >
@@ -19,18 +20,18 @@
     <div  class="top" style="text-align: center;" >
        <h1 >Do you want to submit any leaks,reports or secrets?</h1>
        <!-- <button style="background:#1AAB8A;">enter me</button>  -->
-       <h2>Go ahead and let it all out <a href="disp" class="button">over here</a></h2>
+       <h2>Go ahead and let it all out <a href="read" class="button">over here</a></h2>
     </div>
     
     <div>
     
-        <form class = "content" method="post">   
+        <form class = "content" method="post" name="feed">   
      
         <br/>     
-        <input type="text" name="name" size="30" maxlength="100" placeholder="They shall call you">   
+        <input type="text" name="name" size="30" maxlength="100" placeholder="They shall call you" required>   
         <br />    
         <br />
-        <input type="text" name="content" size="30" maxlength="100" placeholder="This is about" >
+        <input type="text" name="content" size="30" maxlength="100" placeholder="This is about" required >
         <br />   
         
         <br />   
@@ -45,7 +46,7 @@
         </label>  
     </div>   
         <br />     
-        <textarea name="feedback" rows="8" cols="60" id="comments " ></textarea>   
+        <textarea name="feedback" rows="8" cols="60" maxlength="140" id="comments " required></textarea>   
         </p>    
         
         <input type="submit" value="Submit my tale" />  

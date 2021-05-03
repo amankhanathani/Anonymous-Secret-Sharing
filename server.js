@@ -28,7 +28,7 @@ app.get("/", function(req,res){
     res.sendFile(__dirname+"/ranthere.html") 
     
 })
-app.get('/disp',(req,res)=>{
+app.get('/read',(req,res)=>{
   Show.find({}, function(err,notes){
       // console.log(notes);
       res.render('index',{

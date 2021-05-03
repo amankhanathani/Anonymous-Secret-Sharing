@@ -12,6 +12,10 @@ label,legend,input{
 html{
     height: 100%;
 }
+
+input:invalid {
+  border: 2px dashed red;
+}
 body {
     margin:0;
     
