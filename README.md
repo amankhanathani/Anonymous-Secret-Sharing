@@ -9,7 +9,7 @@ In this application anyone can post data from the HTML form to MongoDB Atlas. Th
 ## Challenges I ran into
 I was having trouble deciding an method to display the data, we chose to use EJS. 
 I was also having trouble deciding if creating this application would be ethical, we decided that everyone deserves an unbiased opportunity to tell their stories.
-## Accomplishments that we're proud of
+## Accomplishments that I am proud of
 This application gained positive response from the users.
 ## What I learned
 Learnt to use MongoDB Atlas, Express js, body-parser, mongoose, Node, CSS Styling, EJS.
