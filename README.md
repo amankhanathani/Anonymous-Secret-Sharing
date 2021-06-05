@@ -15,4 +15,5 @@ This application gained positive response from the users.
 Learnt to use MongoDB Atlas, Express js, body-parser, mongoose, Node, CSS Styling, EJS.
 In this platform each individual has equal importance, so sometimes people who are the most quiet can speak the loudest words but aren't able to. We learnt that using this application we can give them equal opportunities to speak.
 ## What's next for Anonymous secret sharing service
-Based on user response on the application, this can be upgraded to add new features like adding tags so users  can see data based on shortlisting done by the tags. or when the database grows way bigger, we will have a limitations to the display function. Like only the last 20 submissions will be displayed.
+Based on user response on the application, this can be upgraded to add new features like adding tags so users  can see data based on shortlisting done by the tags. 
+or when the database grows way bigger, we will have a limitations to the display function. Like only the last 20 submissions will be displayed.
