@@ -16,8 +16,7 @@
 # For more information on GitHub Actions for Azure, refer to https://github.com/Azure/Actions
 # For more samples to get started with GitHub Action workflows to deploy to Azure, refer to https://github.com/Azure/actions-workflow-samples
 on:
-  release:
-    types: [created]
+  push:  
 
 env:
   AZURE_WEBAPP_NAME: AnonymousSecretSharing    # set this to your application's name
@@ -41,5 +40,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_4a125b02dbbb4f7494a230cae7533ea0 }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
